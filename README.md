@@ -1,1 +1,59 @@
-# Face_Mask_Detection_Covid-19
+# Face-Mask Detector
+Real time face-mask detection using Deep Learning and opencv
+
+## About Project
+This project uses a Deep Neural Network, more specifically a Convolutional Neural Network, to differentiate between images of people with and without masks. The CNN manages to get 
+an accuracy of **98.2% on the training set** and **97.3% on the test set**. Then the stored weights of this CNN are used to classify as mask or no mask, in real time, using OpenCV.
+With the webcam capturing the video, the frames are preprocessed and and fed to the model to accomplish this task. The model works efficiently with no apparent lag time between
+wearing/removing mask and display of prediction.
+
+#### The model is capable of predicting multiple faces with or without masks at the same time
+
+## Working 
+
+### With Mask
+
+![image](ReadmeFile/mask.png)
+
+### No Mask
+
+![image](ReadmeFile/Nomask.png)
+
+###Multiple Object
+![image](ReadmeFile/Demo1.png)
+
+
+
+
+## Dataset
+
+The data used can be downloaded through this [link](https://public.roboflow.com/object-detection/mask-wearing) or can be downloaded from this repository as well (folders 'test' and 
+'train'). .
+
+## How to Use
+
+To use this project on your system, follow these steps:
+
+1.Clone this repository onto your system by typing the following command on your Command Prompt:
+
+```
+git clone https://github.com/srnsrn120/Face_Mask_Detection_Covid-19.git
+```
+Now Go inside workspace:
+
+```
+cd Face_Mask_Detection_Covid-19
+```
+
+2. Download all libaries using::
+```
+pip install -r requirements.txt
+```
+
+3. Run facemask.py by typing the following command on your Command Prompt:
+```
+python clientApp.py
+```
+
+#### The Project is now ready to use !!
+
